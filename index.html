@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Алина — Кыз узатуу</title>
+<title>Алина — ҚЫЗ ҰЗАТУ</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Caveat:wght@400;500&family=Jost:wght@300;400;500;600&display=swap');
 
   :root{
     --cream:#F6EFE3;
@@ -27,11 +27,13 @@
     color:var(--ink);
     font-family:'Jost', sans-serif;
     font-weight:300;
+    font-size:18px;
+    line-height:1.65;
     overflow-x:hidden;
   }
   h1,h2,h3, .display{
     font-family:'Cormorant Garamond', serif;
-    font-weight:500;
+    font-weight:400;
     margin:0;
   }
   @media (prefers-reduced-motion: reduce){
@@ -61,8 +63,8 @@
   .gate-ornament{ width:120px; height:auto; opacity:0.85; margin-bottom:28px; }
   .gate-title{
     color:var(--cream);
-    font-size:clamp(22px, 4vw, 30px);
-    letter-spacing:0.06em;
+    font-size:clamp(20px, 4.2vw, 28px);
+    letter-spacing:0.05em;
     font-family:'Jost', sans-serif;
     font-weight:300;
     text-transform:uppercase;
@@ -71,12 +73,13 @@
   .gate-buttons{ display:flex; gap:18px; flex-wrap:wrap; justify-content:center; }
   .gate-btn{
     font-family:'Cormorant Garamond', serif;
-    font-size:24px;
+    font-size:26px;
+    font-weight:400;
     letter-spacing:0.03em;
     color:var(--wine);
     background:var(--cream);
     border:1px solid var(--gold-light);
-    padding:16px 40px;
+    padding:17px 42px;
     border-radius:2px;
     cursor:pointer;
     transition:transform .35s ease, background .35s ease, color .35s ease;
@@ -94,7 +97,7 @@
     border:1px solid var(--gold-light);
     border-radius:20px; overflow:hidden; backdrop-filter:blur(6px);
     opacity:0; pointer-events:none; transition:opacity .6s ease;
-    font-family:'Jost', sans-serif; font-size:12px; letter-spacing:0.08em;
+    font-family:'Jost', sans-serif; font-size:13px; letter-spacing:0.08em;
   }
   #lang-switch.visible{ opacity:1; pointer-events:auto; }
   #lang-switch button{
@@ -137,12 +140,12 @@
     text-align:center; padding:80px 24px 60px;
   }
   .hero-kicker{
-    font-size:13px; letter-spacing:0.35em; text-transform:uppercase;
-    color:var(--wine); margin-bottom:10px; opacity:0.85;
+    font-size:16px; letter-spacing:0.28em; text-transform:uppercase;
+    color:var(--wine); margin-bottom:12px; opacity:0.8; font-weight:300;
   }
   .hero-event{
-    font-size:clamp(15px,2.4vw,18px); letter-spacing:0.25em; text-transform:uppercase;
-    color:var(--gold); margin-bottom:34px;
+    font-size:clamp(19px,2.8vw,23px); letter-spacing:0.2em; text-transform:uppercase;
+    color:var(--gold); margin-bottom:38px; font-weight:300;
   }
   .hero-frame{
     position:relative; width:min(320px, 78vw); aspect-ratio:3/4;
@@ -160,25 +163,25 @@
   }
   .photo-placeholder img{ width:100%; height:100%; object-fit:cover; display:block; }
   .hero-names{
-    font-size:clamp(44px, 9vw, 76px);
-    line-height:1;
-    color:var(--wine-dark);
-  }
-  .hero-connector{
-    display:block; font-size:clamp(16px,2.5vw,20px); color:var(--gold);
-    margin:10px 0; font-style:italic;
+    font-family:'Caveat', cursive;
+    font-size:clamp(52px, 11vw, 92px);
+    font-weight:400;
+    line-height:1.15;
+    color:var(--wine);
+    letter-spacing:0.01em;
   }
   .hero-date{
-    margin-top:26px; font-size:clamp(16px,2.2vw,19px);
-    letter-spacing:0.12em; color:var(--ink); opacity:0.85;
+    margin-top:28px; font-size:clamp(21px,2.8vw,25px);
+    font-style:italic; font-weight:400;
+    letter-spacing:0.08em; color:var(--ink); opacity:0.85;
   }
   .hero-time{
-    margin-top:8px; font-size:14px; letter-spacing:0.14em; color:var(--gold);
-    text-transform:uppercase;
+    margin-top:10px; font-size:18px; letter-spacing:0.1em; color:var(--gold);
+    text-transform:uppercase; opacity:0.9;
   }
   .scroll-hint{
-    margin-top:56px; font-size:11px; letter-spacing:0.2em; text-transform:uppercase;
-    color:var(--wine); opacity:0.65;
+    margin-top:56px; font-size:12px; letter-spacing:0.18em; text-transform:uppercase;
+    color:var(--wine); opacity:0.6;
     display:flex; flex-direction:column; align-items:center; gap:8px;
   }
   .scroll-hint svg{ width:14px; height:14px; animation:dip 1.8s ease-in-out infinite; }
@@ -192,22 +195,38 @@
   .section{ padding:100px 24px; max-width:1080px; margin:0 auto; }
   .section-head{ text-align:center; margin-bottom:56px; }
   .section-eyebrow{
-    display:block; font-size:12px; letter-spacing:0.3em; text-transform:uppercase;
-    color:var(--gold); margin-bottom:14px;
+    display:block; font-size:14px; letter-spacing:0.24em; text-transform:uppercase;
+    color:var(--gold); margin-bottom:16px; font-weight:300;
   }
-  .section-title{ font-size:clamp(30px,4.5vw,44px); color:var(--wine-dark); }
-  .section-sub{ margin-top:14px; font-size:15px; color:var(--ink); opacity:0.7; max-width:520px; margin-left:auto; margin-right:auto; }
+  .section-title{ font-size:clamp(38px,5.8vw,56px); font-weight:400; color:var(--wine); }
+  .section-sub{ margin-top:16px; font-size:18px; line-height:1.7; color:var(--ink); opacity:0.7; max-width:520px; margin-left:auto; margin-right:auto; }
+
+  /* ---------- invitation text ---------- */
+  .invitation-text{
+    max-width:640px; margin:0 auto;
+    font-family:'Cormorant Garamond', serif; font-style:italic;
+    font-size:clamp(18px,2.4vw,21px); line-height:1.9;
+    color:var(--ink); text-align:center;
+  }
+  .invitation-text p{ margin:0 0 26px; }
+  .invitation-text p:last-child{ margin-bottom:0; }
+  .invitation-signature{
+    margin-top:38px; font-family:'Cormorant Garamond', serif;
+    font-size:clamp(22px,3vw,26px); font-weight:400; font-style:italic;
+    color:var(--wine); text-align:center; line-height:1.5;
+  }
 
   /* ---------- countdown ---------- */
   .countdown-grid{
-    display:flex; gap:16px; justify-content:center; flex-wrap:wrap;
+    display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:14px;
+    max-width:600px; margin:0 auto;
   }
   .cd-box{
-    width:118px; padding:26px 0; text-align:center;
+    width:auto; min-width:0; padding:28px 4px; text-align:center;
     background:var(--cream-2); border:1px solid var(--gold-light); border-radius:2px;
   }
-  .cd-num{ font-family:'Cormorant Garamond', serif; font-size:44px; color:var(--wine); line-height:1; }
-  .cd-label{ margin-top:8px; font-size:11px; letter-spacing:0.16em; text-transform:uppercase; opacity:0.7; }
+  .cd-num{ font-family:'Cormorant Garamond', serif; font-weight:400; font-size:clamp(26px,7.5vw,58px); color:var(--wine); line-height:1; }
+  .cd-label{ margin-top:9px; font-size:clamp(9px,2.4vw,13px); letter-spacing:0.08em; text-transform:uppercase; opacity:0.7; white-space:nowrap; }
 
   /* ---------- location ---------- */
   .location-card{
@@ -221,14 +240,14 @@
     display:flex; align-items:center; justify-content:center;
   }
   .location-map svg{ width:30%; }
-  .location-name{ font-size:24px; color:var(--wine-dark); margin-bottom:10px; }
-  .location-address{ font-size:15px; opacity:0.75; margin-bottom:22px; line-height:1.6; }
+  .location-name{ font-size:32px; font-weight:400; color:var(--wine); margin-bottom:12px; }
+  .location-address{ font-size:17px; opacity:0.75; margin-bottom:24px; line-height:1.7; }
   .location-address a{ color:inherit; text-decoration:none; border-bottom:1px solid var(--gold-light); transition:opacity .3s ease; }
   .location-address a:hover{ opacity:1; }
   .map-btn{
     display:inline-flex; align-items:center; gap:10px;
-    font-family:'Jost', sans-serif; font-size:13px; letter-spacing:0.12em; text-transform:uppercase;
-    color:var(--cream); background:var(--wine); border:none; padding:14px 26px; border-radius:2px;
+    font-family:'Jost', sans-serif; font-size:15px; letter-spacing:0.1em; text-transform:uppercase;
+    color:var(--cream); background:var(--wine); border:none; padding:16px 30px; border-radius:2px;
     text-decoration:none; cursor:pointer; transition:background .3s ease;
   }
   .map-btn:hover{ background:var(--wine-dark); }
@@ -265,14 +284,26 @@
   footer{
     text-align:center; padding:70px 24px 60px;
   }
-  .footer-names{ font-size:22px; color:var(--wine-dark); margin-bottom:10px; }
-  .footer-note{ font-size:13px; letter-spacing:0.05em; opacity:0.65; }
+  .footer-names{ font-size:30px; font-weight:400; color:var(--wine); margin-bottom:12px; }
+  .footer-note{ font-size:15px; letter-spacing:0.04em; opacity:0.65; }
 
   @media (max-width: 760px){
     .gallery-grid{ grid-template-columns:repeat(2,1fr); grid-auto-rows:120px; }
-    .cd-box{ width:82px; padding:18px 0; }
-    .cd-num{ font-size:32px; }
+    .countdown-grid{ gap:10px; }
+    .cd-box{ padding:20px 2px; }
     .section{ padding:72px 20px; }
+  }
+
+  @media (max-width: 420px){
+    body{ font-size:17px; }
+    .hero{ padding:64px 18px 48px; }
+    .hero-kicker{ font-size:14px; letter-spacing:0.2em; }
+    .hero-event{ letter-spacing:0.14em; }
+    .footer-names{ font-size:24px; }
+    .countdown-grid{ gap:7px; }
+    .cd-box{ padding:16px 2px; }
+    .location-card{ padding:32px 22px; }
+    .location-name{ font-size:26px; }
   }
 </style>
 </head>
@@ -320,7 +351,7 @@
   <!-- HERO -->
   <header class="hero">
     <span class="hero-kicker" id="t-kicker">Приглашение на</span>
-    <span class="hero-event" id="t-event">Кыз узатуу</span>
+    <span class="hero-event" id="t-event">ҚЫЗ ҰЗАТУ</span>
 
     <div class="hero-frame">
       <svg class="frame-deco" viewBox="0 0 300 380" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -358,6 +389,12 @@
       <circle cx="280" cy="20" r="3.4" fill="#B58A50"/>
     </svg>
   </div>
+
+  <!-- PARENTS' INVITATION -->
+  <section class="section reveal" id="invitation-section" style="padding-top:40px;">
+    <div class="invitation-text" id="invitation-text"></div>
+    <div class="invitation-signature" id="invitation-signature"></div>
+  </section>
 
   <!-- COUNTDOWN -->
   <section class="section reveal" id="countdown-section">
@@ -401,7 +438,7 @@
   </div>
 
   <footer>
-    <div class="footer-names">Алина</div>
+    <div class="footer-names" id="t-footer-name">ҚЫЗ ҰЗАТУ Алины</div>
     <div class="footer-note" id="t-footer">С любовью, семья Алины</div>
   </footer>
 
@@ -412,10 +449,20 @@
   const translations = {
     ru: {
       kicker: "Приглашение на",
-      event: "Кыз узатуу",
+      event: "ҚЫЗ ҰЗАТУ",
       date: "10 октября 2026",
       eventTime: "Начало торжества — 16:00",
       scrollhint: "Листайте вниз",
+      invParagraphs: [
+        "Дорогие родные, друзья и уважаемые гости!",
+        "Мы, Болат и Баян,<br>от всей души приглашаем Вас<br>на особенный для нашей семьи праздник —<br>проводы нашей любимой дочери Алины.",
+        "Сегодня в наших сердцах одновременно<br>и радость, и волнение.<br>Дочку, которую мы растили с любовью,<br>которой радовались каждый день,<br>готовится покинуть родной дом<br>и вступить в новую жизнь.",
+        "Для родителей это особенный момент —<br>с гордостью и любовью отпустить свою дочь<br>навстречу её судьбе.",
+        "Мы желаем ей светлого пути,<br>крепкой семьи, взаимопонимания,<br>любви и счастья на долгие годы.",
+        "В этот важный день<br>мы хотим видеть рядом дорогих нам людей,<br>услышать Ваши добрые пожелания<br>и получить Ваше благословение.",
+        "Приглашаем Вас за наш праздничный дастархан<br>разделить с нами радость<br>и проводить нашу дочь<br>в её новую счастливую жизнь."
+      ],
+      invSignature: "С уважением и любовью,<br>Болат и Баян",
       cdEyebrow: "Ожидание",
       cdTitle: "До торжества осталось",
       cdDays: "Дней", cdHours: "Часов", cdMinutes: "Минут", cdSeconds: "Секунд",
@@ -424,7 +471,8 @@
       locName: "Uluu Too Zeta",
       locAddress: "г. Бишкек, ул. Баба-Ата, 87",
       locBtn: "Открыть в 2ГИС",
-      footer: "С любовью, семья Алины"
+      footer: "С любовью, семья Алины",
+      footerName: "ҚЫЗ ҰЗАТУ Алины"
     },
     kz: {
       kicker: "Шақыру",
@@ -432,6 +480,15 @@
       date: "2026 жылдың 10 қазаны",
       eventTime: "Салтанат басталуы — 16:00",
       scrollhint: "Төмен қарай айналдырыңыз",
+      invParagraphs: [
+        "Құрметті ағайын-туыс,<br>арнайы қонақтарымыз!",
+        "Біз, Болат және Баян,<br>Сіздерді жүрегімізге жақын,<br>отбасымыз үшін ерекше күнге<br>қызымыз Алинаның<br>қыз ұзату тойына шақырамыз.",
+        "Бүгін біз үшін қуаныш та, толқыныс та қатар.<br>Себебі жүрегімізге жақын,<br>әлпештеп өсірген қызымыз<br>өзге шаңыраққа келін болып,<br>жаңа өмірге қадам басқалы отыр.",
+        "Ата-ана үшін бұдан асқан толқынысты сәттің бірі жоқ.<br>Қызымыздың әрбір қадамына<br>ақ жол тілеп,<br>әрбір таңын бақытпен қарсы алуын тілейміз.",
+        "Осы қуанышты күнде<br>Сіздердің ақ баталарыңызды алып,<br>ізгі тілектеріңізді естіп,<br>қуанышымызды бірге бөліскіміз келеді.",
+        "Ақ дастарханымыздың төрінен орын алып,<br>қызымыздың жаңа өміріне<br>ақ жол тілеп, баталарыңызды беріңіздер!"
+      ],
+      invSignature: "Құрметпен,<br>Болат және Баян",
       cdEyebrow: "Күту",
       cdTitle: "Тойға дейін қалды",
       cdDays: "Күн", cdHours: "Сағат", cdMinutes: "Минут", cdSeconds: "Секунд",
@@ -440,7 +497,8 @@
       locName: "Uluu Too Zeta",
       locAddress: "Бішкек қаласы, Баба-Ата көшесі, 87",
       locBtn: "2ГИС-те ашу",
-      footer: "Сүйіспеншілікпен, Алина мен оның отбасысы"
+      footer: "Сүйіспеншілікпен, Алина мен оның отбасысы",
+      footerName: "Алинаның қыз ұзату тойы"
     }
   };
 
@@ -465,6 +523,10 @@
     setText('t-event', t.event);
     setText('t-date', t.date);
     setText('t-time', t.eventTime);
+
+    const invText = document.getElementById('invitation-text');
+    invText.innerHTML = t.invParagraphs.map(p => `<p>${p}</p>`).join('');
+    document.getElementById('invitation-signature').innerHTML = t.invSignature;
     setText('t-scrollhint', t.scrollhint);
     setText('t-cd-eyebrow', t.cdEyebrow);
     setText('t-cd-title', t.cdTitle);
@@ -478,6 +540,7 @@
     setText('t-loc-address', t.locAddress);
     setText('t-loc-btn', t.locBtn);
     setText('t-footer', t.footer);
+    setText('t-footer-name', t.footerName);
 
     document.querySelectorAll('#lang-switch button').forEach(btn=>{
       btn.classList.toggle('active', btn.dataset.lang === lang);
