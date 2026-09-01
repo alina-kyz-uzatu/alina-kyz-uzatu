@@ -176,8 +176,8 @@
     letter-spacing:0.08em; color:var(--ink); opacity:0.85;
   }
   .hero-time{
-    margin-top:10px; font-size:18px; letter-spacing:0.1em; color:var(--gold);
-    text-transform:uppercase; opacity:0.9;
+    margin-top:12px; font-size:16px; letter-spacing:0.08em; color:var(--gold);
+    text-transform:uppercase; opacity:0.9; line-height:1.7;
   }
   .scroll-hint{
     margin-top:56px; font-size:12px; letter-spacing:0.18em; text-transform:uppercase;
@@ -369,7 +369,7 @@
 
     <h1 class="hero-names">Алина</h1>
     <div class="hero-date" id="t-date">10 октября 2026</div>
-    <div class="hero-time" id="t-time">Начало торжества — 16:00</div>
+    <div class="hero-time" id="t-time">Сбор гостей — 16:00<br>Начало торжества — 17:00</div>
 
     <div class="scroll-hint">
       <span id="t-scrollhint">Листайте вниз</span>
@@ -451,7 +451,8 @@
       kicker: "Приглашение на",
       event: "ҚЫЗ ҰЗАТУ",
       date: "10 октября 2026",
-      eventTime: "Начало торжества — 16:00",
+      gatherTime: "Сбор гостей — 16:00",
+      startTime: "Начало торжества — 17:00",
       scrollhint: "Листайте вниз",
       invParagraphs: [
         "Дорогие родные, друзья и уважаемые гости!",
@@ -478,7 +479,8 @@
       kicker: "Шақыру",
       event: "Қыз ұзату той",
       date: "2026 жылдың 10 қазаны",
-      eventTime: "Салтанат басталуы — 16:00",
+      gatherTime: "Қонақтарды қарсы алу — 16:00",
+      startTime: "Салтанат басталуы — 17:00",
       scrollhint: "Төмен қарай айналдырыңыз",
       invParagraphs: [
         "Құрметті ағайын-туыс,<br>арнайы қонақтарымыз!",
@@ -522,7 +524,7 @@
     setText('t-kicker', t.kicker);
     setText('t-event', t.event);
     setText('t-date', t.date);
-    setText('t-time', t.eventTime);
+    document.getElementById('t-time').innerHTML = `${t.gatherTime}<br>${t.startTime}`;
 
     const invText = document.getElementById('invitation-text');
     invText.innerHTML = t.invParagraphs.map(p => `<p>${p}</p>`).join('');
